@@ -1,0 +1,109 @@
+/*46b401*/
+*
+{
+  font-family:"Open Sans",sans-serif;
+  /*font-size:1.25em;*/
+  font-size:28px;
+}
+h1,h2,h3,h4,h5,h6
+{
+  font-family:"Roboto",sans-serif;
+  font-weight:bold;
+}
+h1
+{
+  font-size:3.998em;
+}
+h2
+{
+  font-size:2.827em;
+}
+h3
+{
+  font-size:1.999em;
+}
+h4
+{
+  font-size:1.414em;
+}
+h5
+{
+  font-size:0.707em;
+}
+h6
+{
+  font-size:0.5em;
+}
+#navigation
+{
+  background-color:#46b401;
+  background-image: radial-gradient(ellipse farthest-corner at 0px 0px , #46b401 0%, #3b9601 100%);
+/*3b9601  */
+  color:white;
+  min-height:10px;
+}
+#logo
+{
+  margin:1em auto 2em;
+}
+.blue-bg
+{
+  background:#0074b2;
+  background-image:radial-gradient(ellipse, #0074b2 0%, #02669b 100%);
+}
+.blue-bg, .green-bg, .lightblue-bg
+{
+  color:white;
+  padding:3em 0;
+}
+.overlay
+{
+  color:white;
+  text-align:center;
+}
+#hero
+{
+  background-image:url('file:///Users/kyle/Code/HTML/i3cares.org/assets/images/hero-1-dark.jpg');
+  max-height:100%;
+  background-size:cover;
+}
+#hero *
+{
+  padding:1em;
+  text-shadow:0 0 6px rgba(0,0,0,0.5), 0 0 2px rgba(0,0,0,0.25);
+}
+.vertical-margin-xs
+{
+  margin-top:1em;
+  margin-bottom:1em;
+}
+.vertical-margin-sm
+{
+  margin-top:2em;
+  margin-bottom:2em;
+}
+.vertical-margin-md
+{
+  margin-top:3em;
+  margin-bottom:3em;
+}
+.vertical-margin-lg
+{
+  margin-top:4em;
+  margin-bottom:4em;
+}
+#capabilities h4
+{
+  margin-top:1em;
+}
+.white-logo-right
+{
+  background-image:url('file:///Users/kyle/Code/HTML/i3cares.org/assets/images/i3-cares-logo-white-sm.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-bottom:0.675em;
+}
+svg
+{
+  height:100px;
+}
