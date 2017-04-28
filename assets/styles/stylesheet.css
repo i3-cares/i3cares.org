@@ -63,7 +63,7 @@ h6
 }
 #hero
 {
-  background-image:url('file:///Users/kyle/Code/HTML/i3cares.org/assets/images/hero-1-dark.jpg');
+  background-image:url('https://i3-cares.github.io/i3cares.org/assets/images/hero-1-dark.jpg');
   max-height:100%;
   background-size:cover;
 }
@@ -98,7 +98,7 @@ h6
 }
 .white-logo-right
 {
-  background-image:url('file:///Users/kyle/Code/HTML/i3cares.org/assets/images/i3-cares-logo-white-sm.png');
+  background-image:url('https://i3-cares.github.io/i3cares.org/assets/images/i3-cares-logo-white-sm.png');
   background-repeat: no-repeat;
   background-position: right;
   margin-bottom:0.675em;
