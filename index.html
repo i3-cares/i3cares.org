@@ -4,7 +4,6 @@
     <link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/styles/stylesheet.css" >
     <title>i3 Cares &hearts; Making a difference while making a living</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -9297,4 +9296,31 @@
       </div>
     </div>
   </body>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+    // replace hero background
+    var viewport_width = parseInt($(window).width());
+    if (viewport_width > 1200)
+    {
+      $('#hero').css('background-image',"url('https://i3-cares.github.io/i3cares.org/assets/images/hero-1-dark-xl.jpg')");
+    }
+    else if (viewport_width > 992)
+    {
+      $('#hero').css('background-image',"url('https://i3-cares.github.io/i3cares.org/assets/images/hero-1-dark-lg.jpg')");
+    }
+    else if (viewport_width > 768)
+    {
+      $('#hero').css('background-image',"url('https://i3-cares.github.io/i3cares.org/assets/images/hero-1-dark-md.jpg')");
+    }
+    else
+    {
+      $('#hero').css('background-image',"url('https://i3-cares.github.io/i3cares.org/assets/images/hero-1-dark-sm.jpg')");
+    }
+  });
+  </script>
 </html>
