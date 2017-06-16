@@ -51,6 +51,11 @@ h6
   background:#0074b2;
   background-image:radial-gradient(ellipse, #0074b2 0%, #02669b 100%);
 }
+.lightblue-bg
+{
+  background:#3eccee;
+  background-image:radial-gradient(ellipse, #3eccee 50%, #35b4d2 100%);
+}
 .blue-bg, .green-bg, .lightblue-bg
 {
   color:white;
@@ -103,7 +108,15 @@ h6
   background-position: right;
   margin-bottom:0.675em;
 }
-svg
+#capabilities svg
 {
   height:100px;
+}
+
+@media only screen and (max-width : 767px)
+{
+  #facebook-icon svg
+  {
+      width:50%;
+  }
 }
