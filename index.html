@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <link rel='dns-prefetch' href='//code.jquery.com' />
@@ -30,7 +31,7 @@
     <div>
       <div class="container">
         <div class="row vertical-margin-sm" id="capabilities">
-          <h2 class="text-center" style="margin-bottom:0.675em;">Getting Involved</h2>
+          <h2 class="text-center">Getting Involved</h2>
           <div class="col-sm-4 text-center">
             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 182.33 81.07"><defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;stroke:#000;stroke-miterlimit:10;}.cls-3{stroke-width:3px;}</style></defs><title>Untitled-1</title><rect class="cls-1" x="0.5" y="0.5" width="181.33" height="80.07"/><path d="M189.43,71.28v79.07H9.1V71.28H189.43m1-1H8.1v81.07H190.43V70.28Z" transform="translate(-8.1 -70.28)"/><rect class="cls-1" x="4.3" y="5.16" width="173.72" height="70.93"/><path d="M184.63,76.94v67.93H13.91V76.94H184.63m3-3H10.91v73.93H187.63V73.94Z" transform="translate(-8.1 -70.28)"/><rect class="cls-1" x="139.94" y="27.02" width="29.6" height="8.27"/><path d="M177.15,97.8v7.27h-28.6V97.8h28.6m1-1h-30.6v9.27h30.6V96.8Z" transform="translate(-8.1 -70.28)"/><line class="cls-2" x1="133.41" y1="35.79" x2="11.64" y2="35.79"/><line class="cls-2" x1="170.04" y1="47.86" x2="11.64" y2="47.86"/><line class="cls-2" x1="170.04" y1="69.84" x2="102.59" y2="69.84"/><line class="cls-2" x1="170.04" y1="19.41" x2="102.59" y2="19.41"/><line class="cls-2" x1="79.09" y1="69.84" x2="11.64" y2="69.84"/><line class="cls-3" x1="79.09" y1="12.97" x2="11.64" y2="12.97"/><line class="cls-3" x1="67.42" y1="18.68" x2="11.64" y2="18.68"/><line class="cls-3" x1="67.42" y1="24.38" x2="11.64" y2="24.38"/></svg>
             <p style="margin-top:0.75em;">Give Through Payroll Deduction</p>
@@ -9295,6 +9296,40 @@
       	i3 believes that our business is fully integrated with the people that we serve and, as such, i3 stands ready to open handedly supply the needs of these people in both the local and global communities in the areas of education, community development, and quality of life improvement.
       </div>
     </div>
+
+
+    <!-- CONTACT FORM CONTAINER -->
+    <div class="container vertical-margin-md">
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSfeC39i63NC3Ma5qnqTEbqhVk5RJSmloYpgPvRWPsOUZv8ElQ/formResponse" target="_self" method="POST" id="mG61Hd">
+        <div class="row">
+          <h3 class="col-md-12">Contact Us</h3>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label class="invisible" for="entry.2023868555">Name</label>
+              <input required type="text" class="form-control" aria-label="Name" aria-describedby="i.desc.140332779 i.err.140332779" name="entry.2023868555" value="" dir="auto" data-initial-dir="auto" data-initial-value="" placeholder="Name">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label class="invisible" for="entry.174287210">Email</label>
+              <input required type="email" class="form-control" aria-label="Email" aria-describedby="i.desc.1284658916 i.err.1284658916" name="entry.174287210" value="" dir="auto" data-initial-dir="auto" data-initial-value="" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="invisible" for="entry.1765123144">Message</label>
+              <textarea placeholder="Message" class="form-control" data-rows="3" rows="3" tabindex="0" aria-label="Message" name="entry.1765123144" dir="auto" data-initial-dir="auto" data-initial-value="" ></textarea>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-default pull-right" type="submit" disabled="true">Submit</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+    <!-- FACEBOOK CONTAINER -->
     <div class="lightblue-bg">
       <div class="container">
         <div class="row">
@@ -9311,6 +9346,7 @@
         </div>
       </div>
     </div>
+
   </body>
   <script
   src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -9318,6 +9354,18 @@
   crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script>
+  function showLabel(i,bool)
+  {
+    var $label = $(i).parent().find('label');
+    if (bool)
+    {
+      $($label).removeClass('invisible');
+    }
+    else
+    {
+      $($label).addClass('invisible');
+    }
+  }
   $(document).ready(function(){
     // replace hero background
     var viewport_width = parseInt($(window).width());
@@ -9337,6 +9385,18 @@
     {
       $('#hero').css('background-image',"url('https://i3-cares.github.io/i3cares.org/assets/images/hero-1-dark-sm.jpg')");
     }
+    // $('input').keyup(function(){
+    //   showLabel($(this));
+    // });
+    $('.form-control').focus(function(){
+        showLabel($(this),true);
+    });
+    $('.form-control').blur(function(){
+        showLabel($(this),false);
+    });
+    setTimeout(function(){
+      $('button').removeAttr('disabled');
+    }, 5000);
   });
   </script>
 </html>
