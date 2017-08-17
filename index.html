@@ -9367,6 +9367,10 @@
               <label class="invisible" for="entry.1765123144">Message</label>
               <textarea placeholder="Message" class="form-control" data-rows="3" rows="3" tabindex="0" aria-label="Message" name="entry.1765123144" dir="auto" data-initial-dir="auto" data-initial-value="" ></textarea>
             </div>
+            <div style="display:none;">
+              <label>Keep this field blank</label>
+              <input type="text" name="referrer" id="referrer" />
+            </div>
             <div class="form-group">
               <button class="btn btn-default pull-right" type="submit" disabled="true">Submit</button>
             </div>
@@ -9426,6 +9430,18 @@
     setTimeout(function(){
       $('button').removeAttr('disabled');
     }, 5000);
+
+    $('form').submit(function(e){
+  		// The field is empty, submit the form.
+  		if(!document.getElementById("referrer").value) {
+  			return true;
+  		}
+  		 // the field has a value it's a spam bot
+  		else {
+  			return e.preventDefault();
+  		}
+
+    });
   });
   </script>
 </html>
